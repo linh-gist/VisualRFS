@@ -1,0 +1,42 @@
+Put detection of FairMOT with Re-Identification feature 256 dimension in this folder.
+
+@article{zhang2021fairmot,
+  title={Fairmot: On the fairness of detection and re-identification in multiple object tracking},
+  author={Zhang, Yifu and Wang, Chunyu and Wang, Xinggang and Zeng, Wenjun and Liu, Wenyu},
+  journal={International journal of computer vision},
+  volume={129},
+  pages={3069--3087},
+  year={2021},
+  publisher={Springer}
+}
+
+Detection files are Numpy files
+
+MOT16-01.npz  MOT16-04.npz  MOT16-07.npz  MOT16-10.npz  MOT16-13.npz
+MOT16-02.npz  MOT16-05.npz  MOT16-08.npz  MOT16-11.npz  MOT16-14.npz
+MOT16-03.npz  MOT16-06.npz  MOT16-09.npz  MOT16-12.npz
+
+The detection file stores information about the detected bounding boxes, including the coordinates
+(Top, Left, Bottom, Right) and the confidence score of each detection.
+It stores re-identification data linked to the corresponding bounding boxes.
+
+Below is an example of how this information is structured:
+dict_detect[str(self.frame_id) + '_det'] = np.copy(dets)
+dict_detect[str(self.frame_id) + '_feat'] = np.copy(id_feature)
+
+0000 = {str} '0_det'
+0001 = {str} '0_feat'
+0002 = {str} '1_det'
+0003 = {str} '1_feat'
+0004 = {str} '2_det'
+0005 = {str} '2_feat'
+0006 = {str} '3_det'
+0007 = {str} '3_feat'
+0008 = {str} '4_det'
+0009 = {str} '4_feat'
+0010 = {str} '5_det'
+0011 = {str} '5_feat'
+0012 = {str} '6_det'
+0013 = {str} '6_feat'
+0014 = {str} '7_det'
+0015 = {str} '7_feat'

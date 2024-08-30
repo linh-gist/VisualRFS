@@ -1,0 +1,6 @@
+[submodule "src/cpputils/fuzzylite"]
+	path = src/cpputils/fuzzylite
+	url = https://github.com/fuzzylite/fuzzylite.git
+[submodule "src/cpputils/pybind11"]
+	path = src/cpputils/pybind11
+	url = https://github.com/pybind/pybind11.git

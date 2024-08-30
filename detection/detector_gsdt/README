@@ -1,0 +1,40 @@
+Put detection of GSDT with Re-Identification feature 512 dimension in this folder.
+
+@inproceedings{wang2021joint,
+  title={Joint object detection and multi-object tracking with graph neural networks},
+  author={Wang, Yongxin and Kitani, Kris and Weng, Xinshuo},
+  booktitle={2021 IEEE international conference on robotics and automation (ICRA)},
+  pages={13708--13715},
+  year={2021},
+  organization={IEEE}
+}
+
+Detection files are Numpy files
+
+MOT20-01.npz  MOT20-03.npz  MOT20-05.npz  MOT20-07.npz
+MOT20-02.npz  MOT20-04.npz  MOT20-06.npz  MOT20-08.npz
+
+The detection file stores information about the detected bounding boxes, including the coordinates
+(Top, Left, Bottom, Right) and the confidence score of each detection.
+It stores re-identification data linked to the corresponding bounding boxes.
+
+Below is an example of how this information is structured:
+dict_detect[str(self.frame_id) + '_det'] = np.copy(dets)
+dict_detect[str(self.frame_id) + '_feat'] = np.copy(id_feature)
+
+0000 = {str} '0_det'
+0001 = {str} '0_feat'
+0002 = {str} '1_det'
+0003 = {str} '1_feat'
+0004 = {str} '2_det'
+0005 = {str} '2_feat'
+0006 = {str} '3_det'
+0007 = {str} '3_feat'
+0008 = {str} '4_det'
+0009 = {str} '4_feat'
+0010 = {str} '5_det'
+0011 = {str} '5_feat'
+0012 = {str} '6_det'
+0013 = {str} '6_feat'
+0014 = {str} '7_det'
+0015 = {str} '7_feat'
