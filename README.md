@@ -82,7 +82,7 @@ Linh Ma (linh.mavan@gm.gist.ac.kr), Machine Learning & Vision Laboratory, GIST, 
 If you find this project useful in your research, please consider citing by:
 
 ```
-@article{linh2024inffus,
+@article{van2024visual,
       title={Visual Multi-Object Tracking with Re-Identification and Occlusion Handling using Labeled Random Finite Sets}, 
       author={Linh~Van~Ma and Tran~Thien~Dat~Nguyen and Changbeom~Shim and Du~Yong~Kim and Namkoo~Ha and Moongu~Jeon},
       journal={Pattern Recognition},
