@@ -10,8 +10,12 @@ This is the official Python and C++ implementation repository for a paper entitl
 - Using object deep feature is effective for re-ID tasks.
 - Fuzzy occlusion handling model improves tracking performance. 
 
+### News
+- Our implementation for 3D multi-camera multi-object tracking with re-identification is released at [3D-Visual-MOT](https://github.com/linh-gist/3D-Visual-MOT)
+- Our GLMB/LMB Python package implementations adapted from Matlab, are released at [labeledRFS](https://github.com/linh-gist/labeledRFS)
+
 ### Docker image
-Docker image to run VisualRFS codes can be found in [Docker Hub]().
+Docker image to run VisualRFS codes can be found in [VisualRFS Docker Hub](https://hub.docker.com/r/linhma/visualrfs).
 
 ### Usage
 1. **Set Up Python Environment**
