@@ -11,6 +11,7 @@
 #include <tuple>
 #include <vector>
 #include "lap.hpp"
+#include "lapjv/lapjv_eigen.cpp"
 
 namespace lap {
 	using CostMatrix = Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic>;
@@ -146,6 +147,14 @@ namespace lap {
 			//std::cout << "Solving (" << cost << "): " << std::endl << C << std::endl;
 			res.resize(C.rows());
 			lap::lap(C, res, u, v);
+            // VectorXi x_assignments(C.cols()); // track index
+            /*VectorXi y_assignments = VectorXi::Ones(C.cols()).array() * -1; // measurement index
+            lapjv(C, res, y_assignments, u, lap::inf);
+            v.setZero();
+            for (int i = 0; i < res.size(); ++i) {
+                int j = res[i];
+                v[j] = C(i, j) - u[i];
+            }*/
 			//std::cout << "rmap: ";
 			//for (auto& r : rmap) {
 				//std::cout << r << ", ";
